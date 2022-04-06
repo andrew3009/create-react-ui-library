@@ -1,10 +1,13 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { create } from "react-test-renderer";
 
 import HelloWorld from "./HelloWorld";
 
 describe("HelloWorld", () => {
   test("renders the HelloWorld component", () => {
-    render(<HelloWorld name="World" />);
+    const component = create(<HelloWorld name="World" />);
+    const instance = component.root;
+    const HelloWorldComponent = instance.findByType("div");
+    expect(HelloWorldComponent.props.className).toBe("helloworld");
   });
 });
