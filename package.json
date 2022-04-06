@@ -15,10 +15,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andrew3009/create-react-ui-library.git"
-  },
+	"repository": "github:andrew3009/create-react-ui-library",
   "keywords": [
     "component",
     "library",
