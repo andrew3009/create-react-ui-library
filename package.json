@@ -1,8 +1,5 @@
 {
   "name": "create-react-ui-library",
-	"publishConfig": {
-    "registry": "https://npm.pkg.github.com/andrew3009"
-  },
   "version": "0.0.4",
   "description": "Boilerplate code to create your own React component library.",
   "bin": "./bin/cli.js",
