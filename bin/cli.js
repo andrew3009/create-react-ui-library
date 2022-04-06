@@ -14,7 +14,7 @@ const runCommand = command => {
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/andrew3009/create-react-ui-library ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install`;
+const installDepsCommand = `cd ${repoName} && npm install --force`;
 
 console.log(`Cloning the repository with name: ${repoName}`);
 
